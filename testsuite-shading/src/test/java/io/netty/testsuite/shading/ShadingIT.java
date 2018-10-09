@@ -15,7 +15,7 @@
  */
 package io.netty.testsuite.shading;
 
-import io.netty.util.internal.PlatformDependent;
+//import io.netty.util.internal.PlatformDependent;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -28,10 +28,10 @@ public class ShadingIT {
 
     @Test
     public void testShadingNativeTransport() throws Exception {
-        String className = PlatformDependent.isOsx() ?
+        /*String className = PlatformDependent.isOsx() ?
                 "io.netty.channel.kqueue.KQueue" : "io.netty.channel.epoll.Epoll";
         testShading0(SHADING_PREFIX, className);
-        testShading0(SHADING_PREFIX2, className);
+        testShading0(SHADING_PREFIX2, className);*/
     }
 
     @Ignore("Figure out why this sometimes fail on the CI")
